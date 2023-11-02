@@ -6,7 +6,7 @@
 Setup your CI pipeline and use the provided `Dockerfile`
 
 ## Description
-This application runs on a base debian bulleye image with the latest `kubectl` and `p7zip-full` packages at build. Its designed to run as a k8s cron job to backup a single targetted k8s clusters', Sealed Secret `TLS Secrets` to a persistant volume for offsite disaster recovery. Ive also added an extra layer of security with 7zip encryption plus archiving. This can add an addidtional layer of protection for backups on Networks services like NFS or cloud storage. The longer and more complex the `ENCRYPTION_KEY` the stronger protection you will have if an unwanted actor steals these backup files. This tool was created to recover clusters in a disaster or migrate IaC declaration from one cluster to another without having to reseal an entire clusters sealed secrets. 
+This application runs on a base debian bulleye image with the latest `kubectl` and `p7zip-full` packages at build. Its designed to run as a k8s cron job to backup a single targetted k8s clusters', Sealed Secret `TLS Secrets` to a persistant volume for offsite disaster recovery. Ive also added an extra layer of security with 7zip encryption plus archiving. This can add an additional layer of protection for backups on Networks services like NFS or cloud storage. The longer and more complex the `ENCRYPTION_KEY` the stronger protection you will have if an unwanted actor steals these backup files. This tool was created to recover clusters in a disaster or migrate IaC declaration from one cluster to another without having to reseal an entire clusters sealed secrets. 
 
 Protect these backups!
 
