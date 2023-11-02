@@ -1,4 +1,5 @@
 FROM debian:bullseye-20231030
+MAINTAINER tyler.hoadley[AT]computersthatwork[DOT]ca
 USER root
 
 ENV DEBIAN_FRONTEND=noninteractive
