@@ -50,6 +50,6 @@ KUBECONFIG_FILECONTENT=CONTENT of cluster config
 ```
 
 
-## Usage
+## TO-DO
 
 Setup rotation within the backup job, or create another cron based job to clean up backups over X days or until X, then X past that.
